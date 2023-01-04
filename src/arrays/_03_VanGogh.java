@@ -47,6 +47,7 @@ import processing.core.PImage;
  */
 
 public class _03_VanGogh extends PApplet {
+	PImage array[];
     PImage canvas;
     PImage paintbrushCursor;
     boolean initializeCanvas = true;
@@ -57,7 +58,10 @@ public class _03_VanGogh extends PApplet {
     Brush brush;
     
     void initializePaintings() {
-        
+        for(int i = 0; i < 3; i++) {
+        	array[i] = new PImage(); 
+        	
+        }
     }
     
     void selectNextPainting() {
